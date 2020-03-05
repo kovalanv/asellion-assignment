@@ -1,0 +1,30 @@
+server:
+  port: 8090
+  servlet:
+    contextPath: /api
+  
+jasypt:
+  encryptor:
+    password: ${ASELLION_APP_ENCRYPTION_PASSWORD}
+
+spring:  
+  datasource:
+    url: ENC(wNZw0t21WGvBrlCVoz1Dck9d5U+Y9yzIJLvr/mF49S5xfYyJd1n1wx2RsjeXd2wpYLPw31YspmR9vLCm8+xIRw6ezQhncLtBQScLB9fpOl6Xa0K+7kuUrrqAHY75U5QwdeSFl6KBpkK4UQ7YfSfhnY7YkM1YOzkYFLa/n6ylG3Rp0bfPnRasAqlBqZykjp7uPQ4Koz/xbzvlnj+lNAzo47h+AmO03SXc)    
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
+  jpa:
+    generate-ddl: false
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    root: WARN
+    com.memorynotfound: DEBUG
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+  path: logs
+  
+  file: ${logging.path}/asellion.log
