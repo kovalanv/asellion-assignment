@@ -1,6 +1,10 @@
 # Asellion-assignment
 
 ## Run application and tests
+
+Add "ASELLION_APP_ENCRYPTION_PASSWORD" to the system enviroment variable with the value "asellion123".  This is to decrypt the encrypted db url in the application.yml file.
+
+
 If you want to run the application from an IDE like eclipse/netbeans, run "com.asellion.AppMain.java".  Application uses POSTGRESQL db.
 
 If you want to run the junit tests, run "ProductRestControllerIntegrationTest.java".  Tests use in-memory h2 db.
@@ -18,8 +22,16 @@ If you want to run the junit tests, run "ProductRestControllerIntegrationTest.ja
 ## Authenticate user
 POST "http://localhost:8090/api/login" -H "Content-Type: application/json"
 
+Use the below credentials to login and obtain the JWT.
+
+
 {
     "username": "user1",
+    "password": "1234"
+}
+
+{
+    "username": "user2",
     "password": "1234"
 }
 

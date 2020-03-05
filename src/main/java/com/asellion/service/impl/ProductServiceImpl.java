@@ -26,7 +26,7 @@ public class ProductServiceImpl implements ProductService {
 	public ResponseEntity<Object> retrieveProducts(Optional<String> name, Optional<Integer> pageSize,
 			Optional<Integer> page, Optional<String> sortBy, Optional<String> sortOrder) {
 
-		String sortByStr = sortBy.orElse("name");
+		String sortByStr = sortBy.orElse("id");
 		String sortOrderStr = sortOrder.orElse("asc");
 		String nameStr = name.orElse(ProductConstants.EMPTY_STRING);
 
@@ -87,7 +87,7 @@ public class ProductServiceImpl implements ProductService {
 			}
 			
 			Product existingProd = productRepository.findFirstByNameIgnoreCase(product.getName());
-			if (!existingProd.getId().equals(product.getId())) {
+			if (existingProd != null && !product.getId().equals(existingProd.getId())) {
 				return ProductUtil.getResponseMap(ProductConstants.FAILURE, HttpStatus.BAD_REQUEST,
 						"Product name already exists", existingProd);
 			}
