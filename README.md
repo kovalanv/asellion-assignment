@@ -1,7 +1,22 @@
 # Asellion-assignment
 
-## Authentication flow 
+## Sequence daigram for user authenticatin flow
+
+![](images/AuthFlow.png)
+
+## Sequence daigram for get list of products flow
+
+![](images/GetProductsFlow.png)
+
+
+
+## Authenticate user
 POST "http://localhost:8090/api/login" -H "Content-Type: application/json"
+
+{
+    "username": "user1",
+    "password": "1234"
+}
 
 ## Get list of products
 GET "http://localhost:8090/api/products?pageSize=5&page=2&sortBy=id&sortOrder=asc" -H "Content-Type: application/json" -H "authorization: Bearer xxxx" -H "username: user1"
