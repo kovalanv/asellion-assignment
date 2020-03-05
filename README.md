@@ -2,6 +2,7 @@
 
 ## Run application and tests
 If you want to run the application from an IDE like eclipse/netbeans, run "com.asellion.AppMain.java".  Application uses POSTGRESQL db.
+
 If you want to run the junit tests, run "ProductRestControllerIntegrationTest.java".  Tests use in-memory h2 db.
 
 ## Sequence daigram for user authenticatin flow
