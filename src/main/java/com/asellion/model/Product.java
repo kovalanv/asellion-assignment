@@ -12,7 +12,7 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "product")
+@Table(name = "prodt")
 public class Product {
 
 	private Long id;
@@ -21,9 +21,9 @@ public class Product {
 	private Calendar lastUpdate;
 
 	@Id
-	@SequenceGenerator(name = "seq-gen", sequenceName = "product_productid_seq", initialValue = 1, allocationSize = 1)
+	@SequenceGenerator(name = "seq-gen", sequenceName = "product_id_seq", initialValue = 1, allocationSize = 1)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq-gen")
-	@Column(name = "productid", updatable = false, nullable = false)
+	@Column(name = "id", updatable = false, nullable = false)
 	public Long getId() {
 		return id;
 	}
