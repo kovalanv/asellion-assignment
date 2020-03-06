@@ -9,7 +9,7 @@ jasypt:
 
 spring:  
   datasource:
-    url: ENC(wNZw0t21WGvBrlCVoz1Dck9d5U+Y9yzIJLvr/mF49S5xfYyJd1n1wx2RsjeXd2wpYLPw31YspmR9vLCm8+xIRw6ezQhncLtBQScLB9fpOl6Xa0K+7kuUrrqAHY75U5QwdeSFl6KBpkK4UQ7YfSfhnY7YkM1YOzkYFLa/n6ylG3Rp0bfPnRasAqlBqZykjp7uPQ4Koz/xbzvlnj+lNAzo47h+AmO03SXc)    
+    url: ENC(5hcAhma/3LclcZA/uBpE1dD3/lErJTX7Ikb6oaJa9LHrtla5EUegRBzqHaygvbIK39d5wnS7kbzRflo3ySlx6latvbj+9Rw0++mvmFLHmGqQv3IXou+dUaIEsVm19uB0La09dO2+omacpvRLNCd3/CeSxAQN9t21RPAZtziBW77DvGMmB2Jeu5CQMXOKTd5KTSpX1nwVjKrNL0EWVNNBHMZT26NXgJBN3WLzLeTUkbKNZBen1Z6MWgnK/vvLE9jYddsf1AaIElo=)    
     driver-class-name: org.postgresql.Driver
     platform: postgres
   jpa:
@@ -18,6 +18,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: public
 
 logging:
   level:
