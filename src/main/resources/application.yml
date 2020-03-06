@@ -9,9 +9,7 @@ jasypt:
 
 spring:  
   datasource:
-    url: jdbc:postgresql://ec2-184-72-236-3.compute-1.amazonaws.com:5432/d82fpei3f3bn38?user=thefnbeyhlktal&password=58c47e5af4e0172fbdd5f628d10cad239f8690538e50789d640251c1faa596b0&sslmode=require
-    username: thefnbeyhlktal
-    password: 58c47e5af4e0172fbdd5f628d10cad239f8690538e50789d640251c1faa596b0    
+    url: ENC(5hcAhma/3LclcZA/uBpE1dD3/lErJTX7Ikb6oaJa9LHrtla5EUegRBzqHaygvbIK39d5wnS7kbzRflo3ySlx6latvbj+9Rw0++mvmFLHmGqQv3IXou+dUaIEsVm19uB0La09dO2+omacpvRLNCd3/CeSxAQN9t21RPAZtziBW77DvGMmB2Jeu5CQMXOKTd5KTSpX1nwVjKrNL0EWVNNBHMZT26NXgJBN3WLzLeTUkbKNZBen1Z6MWgnK/vvLE9jYddsf1AaIElo=)    
     driver-class-name: org.postgresql.Driver
     platform: postgres
   jpa:
