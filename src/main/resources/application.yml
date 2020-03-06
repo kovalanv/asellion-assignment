@@ -9,7 +9,9 @@ jasypt:
 
 spring:  
   datasource:
-    url: ENC(wNZw0t21WGvBrlCVoz1Dck9d5U+Y9yzIJLvr/mF49S5xfYyJd1n1wx2RsjeXd2wpYLPw31YspmR9vLCm8+xIRw6ezQhncLtBQScLB9fpOl6Xa0K+7kuUrrqAHY75U5QwdeSFl6KBpkK4UQ7YfSfhnY7YkM1YOzkYFLa/n6ylG3Rp0bfPnRasAqlBqZykjp7uPQ4Koz/xbzvlnj+lNAzo47h+AmO03SXc)    
+    url: jdbc:postgresql://dev-legalfab.cxbmuufnozfa.ap-southeast-1.rds.amazonaws.com/dev_legalfab_db?user=dev_legalfab_admin&password=legalfab123&sslmode=require
+    username: dev_legalfab_admin
+    password: legalfab123    
     driver-class-name: org.postgresql.Driver
     platform: postgres
   jpa:
