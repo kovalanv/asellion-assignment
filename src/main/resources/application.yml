@@ -9,7 +9,7 @@ jasypt:
 
 spring:  
   datasource:
-    url: jdbc:postgresql://dev-legalfab.cxbmuufnozfa.ap-southeast-1.rds.amazonaws.com/dev_legalfab_db?user=dev_legalfab_admin&password=legalfab123&sslmode=require
+    url: jdbc:postgresql://dev-legalfab.cxbmuufnozfa.ap-southeast-1.rds.amazonaws.com/dev_legalfab_db?user=dev_legalfab_admin&password=legalfab1234&sslmode=require
     username: dev_legalfab_admin
     password: legalfab123    
     driver-class-name: org.postgresql.Driver
